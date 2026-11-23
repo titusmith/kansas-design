@@ -29,17 +29,15 @@ a{color:inherit}
 .brand .i{color:var(--primary)}
 main{flex:1;width:100%;padding-block:3rem 5rem}
 main{position:relative}
-.sparks{position:absolute;top:1.25rem;right:max(16px,env(safe-area-inset-right,0px));width:180px;height:auto;color:#0072BC;pointer-events:none;z-index:0}
-main>h1,main>.lede,.hub{position:relative;z-index:1}
-main>h1,main>.lede{padding-right:200px}
-@media (min-width:1200px){.sparks{width:340px;top:1.5rem}main>h1,main>.lede{padding-right:0}}
-@media (max-width:639px){.sparks{top:.75rem;width:110px}main>h1,main>.lede{padding-right:120px}}
+.sparks{position:absolute;top:1rem;right:max(16px,env(safe-area-inset-right,0px));width:230px;height:auto;color:#0072BC;pointer-events:none;z-index:0}
+.intro,.hub{position:relative;z-index:1}
+.intro{min-height:calc(1rem + 230px * 43 / 54 - 3rem + 1.5rem);max-width:min(60ch,calc(100% - 250px));margin-bottom:1.25rem}
+.intro .lede{margin:0}
+@media (max-width:639px){.sparks{top:.75rem;width:110px}.intro{min-height:0;max-width:calc(100% - 120px)}}
 @media (prefers-color-scheme:dark){.sparks{color:#3D86F5}}
 h1{font-size:1.875rem;line-height:2.25rem;font-weight:700;letter-spacing:-.025em;margin:0 0 .5rem}
 .lede{color:var(--muted-fg);margin:0 0 2rem;max-width:60ch}
-.hub{display:grid;grid-template-columns:1fr;gap:1rem}
-.hub{max-width:56rem}
-@media (min-width:640px){.hub{grid-template-columns:repeat(2,1fr)}}
+.hub{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,18rem),1fr));gap:1rem}
 .tile{display:flex;flex-direction:column;gap:.75rem;padding:1.5rem;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;transition:border-color .15s,box-shadow .15s,transform .15s}
 .tile:hover{border-color:var(--primary);box-shadow:0 4px 12px -4px rgba(0,0,0,.15);transform:translateY(-1px)}
 .tile-icon{display:inline-flex;align-items:center;justify-content:center;width:2.75rem;height:2.75rem;border-radius:var(--radius);background:var(--accent);color:var(--accent-fg)}
@@ -75,8 +73,10 @@ footer{border-top:1px solid var(--border);background:var(--ku-gray);color:var(--
 
 <main class="wrapx">
   <svg class="sparks" viewBox="0 0 54 43" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path fill="currentColor" d="M29 0h1v2h-1zM20 3h1v1h-1zM29 3h1v6h-1zM38 3h1v1h-1zM21 4h1v1h-1zM37 4h1v1h-1zM22 5h1v1h-1zM36 5h1v1h-1zM23 6h1v1h-1zM35 6h1v1h-1zM24 7h1v1h-1zM34 7h1v1h-1zM25 8h1v1h-1zM33 8h1v1h-1zM26 9h1v1h-1zM28 9h3v1h-3zM32 9h1v1h-1zM27 10h1v1h-1zM29 10h1v1h-1zM31 10h1v1h-1zM26 11h1v1h-1zM32 11h1v1h-1zM17 12h2v1h-2zM20 12h8v1h-8zM29 12h1v1h-1zM31 12h8v1h-8zM40 12h2v1h-2zM26 13h1v1h-1zM32 13h1v1h-1zM27 14h1v1h-1zM29 14h1v1h-1zM31 14h1v1h-1zM2 15h1v1h-1zM26 15h1v1h-1zM28 15h3v1h-3zM32 15h1v1h-1zM25 16h1v1h-1zM29 16h1v5h-1zM33 16h1v1h-1zM0 17h1v1h-1zM4 17h1v1h-1zM24 17h1v1h-1zM34 17h1v1h-1zM15 18h1v1h-1zM23 18h1v1h-1zM35 18h1v1h-1zM2 19h1v1h-1zM8 19h1v1h-1zM14 19h1v1h-1zM16 19h1v1h-1zM22 19h1v1h-1zM36 19h1v1h-1zM15 20h1v1h-1zM21 20h1v1h-1zM37 20h1v1h-1zM8 21h1v2h-1zM20 21h1v1h-1zM38 21h1v1h-1zM29 22h1v2h-1zM4 23h1v1h-1zM6 23h2v1h-2zM9 23h2v1h-2zM12 23h1v1h-1zM8 24h1v2h-1zM17 25h1v2h-1zM1 27h1v1h-1zM8 27h1v1h-1zM32 27h1v1h-1zM42 27h1v1h-1zM0 28h1v1h-1zM2 28h1v1h-1zM14 28h2v1h-2zM19 28h2v1h-2zM33 28h1v1h-1zM41 28h1v1h-1zM1 29h1v1h-1zM34 29h1v1h-1zM40 29h1v1h-1zM17 30h1v2h-1zM35 30h1v1h-1zM39 30h1v1h-1zM36 31h3v3h-3zM35 34h1v1h-1zM39 34h1v1h-1zM34 35h1v1h-1zM40 35h1v1h-1zM33 36h1v1h-1zM41 36h1v1h-1zM32 37h1v1h-1zM42 37h1v1h-1zM48 37h1v1h-1zM53 37h1v1h-1zM49 38h1v1h-1zM52 38h1v1h-1zM50 39h2v2h-2zM49 41h1v1h-1zM52 41h1v1h-1zM48 42h1v1h-1zM53 42h1v1h-1z"/></svg>
-  <h1>Student resources</h1>
-  <p class="lede">Curated boards for KU design students, kept up to date by Design faculty.</p>
+  <div class="intro">
+    <h1>Student resources</h1>
+    <p class="lede">Curated boards for KU design students, kept up to date by Design faculty.</p>
+  </div>
   <div class="hub">
     <div class="tile tile-off" aria-disabled="true">
       <span class="tile-icon"><svg class="i i-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/></svg></span>
