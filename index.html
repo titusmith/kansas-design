@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>KU Design Student Resources</title>
-<meta name="description" content="Jobs, internships, events and competitions for KU design students.">
+<meta name="description" content="Jobs, internships, scholarships, events and competitions for KU design students.">
 <style>
 :root{
   --bg:#FAFAFA;--fg:#262626;--card:#FFFFFF;--muted-fg:#666666;--border:#E0E0E0;
@@ -30,8 +30,8 @@ a{color:inherit}
 main{flex:1;width:100%;padding-block:3rem 5rem}
 h1{font-size:1.875rem;line-height:2.25rem;font-weight:700;letter-spacing:-.025em;margin:0 0 .5rem}
 .lede{color:var(--muted-fg);margin:0 0 2rem;max-width:60ch}
-.hub{display:grid;grid-template-columns:1fr;gap:1rem;max-width:56rem}
-@media (min-width:640px){.hub{grid-template-columns:1fr 1fr}}
+.hub{display:grid;grid-template-columns:1fr;gap:1rem}
+@media (min-width:768px){.hub{grid-template-columns:repeat(3,1fr)}}
 .tile{display:flex;flex-direction:column;gap:.75rem;padding:1.5rem;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;transition:border-color .15s,box-shadow .15s,transform .15s}
 .tile:hover{border-color:var(--primary);box-shadow:0 4px 12px -4px rgba(0,0,0,.15);transform:translateY(-1px)}
 .tile-icon{display:inline-flex;align-items:center;justify-content:center;width:2.75rem;height:2.75rem;border-radius:var(--radius);background:var(--accent);color:var(--accent-fg)}
@@ -77,13 +77,19 @@ footer{border-top:1px solid var(--border);background:var(--ku-gray);color:var(--
       <p>Student design competitions, conferences and portfolio events worth putting on your calendar.</p>
       <span class="go">See what's open <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
     </a>
+    <a class="tile" href="https://money.kansas.design/">
+      <span class="tile-icon"><svg class="i i-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg></span>
+      <h2>Scholarships</h2>
+      <p>Answer a few private questions and see which verified scholarships you qualify for.</p>
+      <span class="go">Find your matches <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+    </a>
   </div>
 </main>
 
 <footer><div class="wrapx foot-inner">
   <div class="foot-grid">
-    <div><div class="foot-brand"><svg class="i i-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>KU Design Student Resources</div><p>Jobs, internships, events and competitions for KU design students.</p></div>
-    <div><h4>Students</h4><ul><li><a href="https://career.ku.edu/" target="_blank" rel="noopener noreferrer">KU Career Center</a></li><li><a href="https://jobs.kansas.design/">KU Design Job Leads</a></li><li><a href="https://comps.kansas.design/">KU Design Competitions and Events</a></li></ul></div>
+    <div><div class="foot-brand"><svg class="i i-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>KU Design Student Resources</div><p>Jobs, internships, scholarships, events and competitions for KU design students.</p></div>
+    <div><h4>Students</h4><ul><li><a href="https://career.ku.edu/" target="_blank" rel="noopener noreferrer">KU Career Center</a></li><li><a href="https://jobs.kansas.design/">KU Design Job Leads</a></li><li><a href="https://comps.kansas.design/">KU Design Competitions and Events</a></li><li><a href="https://money.kansas.design/">KU Design Scholarship Finder</a></li></ul></div>
     <div><h4>Program</h4><ul><li><a href="https://design.ku.edu/" target="_blank" rel="noopener noreferrer">KU Department of Design</a></li></ul></div>
   </div>
   <div class="foot-copy">&copy; <span id="yr">2026</span> KU Design. All rights reserved.</div>
