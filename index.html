@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KU Design Student Resources</title>
+<meta name="description" content="Jobs, internships, events and competitions for KU design students.">
+<style>
+:root{
+  --bg:#FAFAFA;--fg:#262626;--card:#FFFFFF;--muted-fg:#666666;--border:#E0E0E0;
+  --primary:#0049B8;--accent:#E6EFFF;--accent-fg:#0049B8;--ring:#0049B8;--ku-gray:#333333;
+  --foot-fg:#BDBDBD;--foot-hi:#FFFFFF;--foot-dim:#8A8A8A;--radius:.5rem;
+  --font:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color-scheme:light}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#121212;--fg:#F2F2F2;--card:#1A1A1A;--muted-fg:#A6A6A6;--border:#333333;
+  --primary:#005CE6;--accent:#1A3366;--accent-fg:#99C2FF;--ring:#3D86F5;--ku-gray:#1F1F1F;
+  color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;min-height:100vh}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ring);outline-offset:2px}
+.i{width:1rem;height:1rem;flex:none;display:inline-block;vertical-align:middle}
+.i-md{width:1.25rem;height:1.25rem}.i-lg{width:1.5rem;height:1.5rem}
+.wrapx{max-width:80rem;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.nav{border-bottom:1px solid var(--border);background:var(--card)}
+.nav-inner{display:flex;align-items:center;padding-block:.75rem}
+.brand{display:flex;align-items:center;gap:.5rem;font-size:1.25rem;font-weight:700;letter-spacing:-.025em;text-decoration:none}
+.brand .i{color:var(--primary)}
+main{flex:1;width:100%;padding-block:3rem 5rem}
+h1{font-size:1.875rem;line-height:2.25rem;font-weight:700;letter-spacing:-.025em;margin:0 0 .5rem}
+.lede{color:var(--muted-fg);margin:0 0 2rem;max-width:60ch}
+.hub{display:grid;grid-template-columns:1fr;gap:1rem;max-width:56rem}
+@media (min-width:640px){.hub{grid-template-columns:1fr 1fr}}
+.tile{display:flex;flex-direction:column;gap:.75rem;padding:1.5rem;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;transition:border-color .15s,box-shadow .15s,transform .15s}
+.tile:hover{border-color:var(--primary);box-shadow:0 4px 12px -4px rgba(0,0,0,.15);transform:translateY(-1px)}
+.tile-icon{display:inline-flex;align-items:center;justify-content:center;width:2.75rem;height:2.75rem;border-radius:var(--radius);background:var(--accent);color:var(--accent-fg)}
+.tile h2{margin:0;font-size:1.25rem;font-weight:700;letter-spacing:-.015em}
+.tile p{margin:0;color:var(--muted-fg);font-size:.9375rem}
+.tile .go{margin-top:auto;display:inline-flex;align-items:center;gap:.25rem;color:var(--primary);font-size:.875rem;font-weight:600}
+.tile:hover .go .i{transform:translateX(2px)}
+.go .i{transition:transform .15s}
+@media (prefers-reduced-motion:reduce){.tile,.go .i{transition:none}.tile:hover{transform:none}}
+footer{border-top:1px solid var(--border);background:var(--ku-gray);color:var(--foot-fg)}
+.foot-inner{padding-block:2.5rem}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:2rem}
+@media (min-width:640px){.foot-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1024px){.foot-grid{grid-template-columns:2fr 1fr 1fr}}
+.foot-brand{display:flex;align-items:center;gap:.5rem;color:var(--foot-hi);font-weight:700;margin-bottom:.75rem}
+.foot-grid p{font-size:.875rem;margin:0;max-width:28rem}
+.foot-grid h4{margin:0 0 .75rem;font-size:.875rem;font-weight:600;color:var(--foot-hi);text-transform:uppercase;letter-spacing:.05em}
+.foot-grid ul{list-style:none;margin:0;padding:0;font-size:.875rem}
+.foot-grid li+li{margin-top:.5rem}
+.foot-grid a{text-decoration:none;color:var(--foot-fg)}
+.foot-grid a:hover{color:var(--foot-hi)}
+.foot-copy{margin-top:2rem;border-top:1px solid rgba(166,166,166,.2);padding-top:1.5rem;text-align:center;font-size:.75rem;color:var(--foot-dim)}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrapx nav-inner">
+  <a class="brand" href="/"><svg class="i i-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg><span>KU Design Student Resources</span></a>
+</div></header>
+
+<main class="wrapx">
+  <h1>Student resources</h1>
+  <p class="lede">Curated boards for KU design students, kept up to date by Design faculty.</p>
+  <div class="hub">
+    <a class="tile" href="https://jobs.kansas.design/">
+      <span class="tile-icon"><svg class="i i-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg></span>
+      <h2>Jobs and Internships</h2>
+      <p>Internships and entry-level design jobs, each one reviewed before it goes up.</p>
+      <span class="go">Browse listings <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+    </a>
+    <a class="tile" href="https://comps.kansas.design/">
+      <span class="tile-icon"><svg class="i i-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></span>
+      <h2>Events and Competitions</h2>
+      <p>Student design competitions, conferences and portfolio events worth putting on your calendar.</p>
+      <span class="go">See what's open <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+    </a>
+  </div>
+</main>
+
+<footer><div class="wrapx foot-inner">
+  <div class="foot-grid">
+    <div><div class="foot-brand"><svg class="i i-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>KU Design Student Resources</div><p>Jobs, internships, events and competitions for KU design students.</p></div>
+    <div><h4>Students</h4><ul><li><a href="https://career.ku.edu/" target="_blank" rel="noopener noreferrer">KU Career Center</a></li><li><a href="https://jobs.kansas.design/">KU Design Job Leads</a></li><li><a href="https://comps.kansas.design/">KU Design Competitions and Events</a></li></ul></div>
+    <div><h4>Program</h4><ul><li><a href="https://design.ku.edu/" target="_blank" rel="noopener noreferrer">KU Department of Design</a></li></ul></div>
+  </div>
+  <div class="foot-copy">&copy; <span id="yr">2026</span> KU Design. All rights reserved.</div>
+</div></footer>
+<script>document.getElementById("yr").textContent=new Date().getFullYear()</script>
+</body>
+</html>
